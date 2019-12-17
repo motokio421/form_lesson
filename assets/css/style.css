@@ -62,29 +62,34 @@
   display: flex;
 }
 
-.button-box{
+.facebook-button{
+  color: #fff; 
   text-align: center;
   padding: 13px;
-  border: 1px solid #d9d9d9;
   font-size: 13px;
   border-radius: 3px;
   width: 50%; 
   background-color:#3b5999 ;
 }
 
-.button-box:last-child{
-  margin-left: 8px;
-  background-color: #fff;
-}
-
-.facebook-button{
-  color: #fff; 
-  border-color: #3b5999;
- 
+.facebook-button:hover{
+  background-color: #344e87;
+  border-color: transparent;
 }
 
 .Google-button{
   color: #dd4b39;
+  text-align: center;
+  padding: 13px;
+  border: 1px solid #d9d9d9; 
+  font-size: 13px;
+  border-radius: 3px;
+  width: 50%; 
+  margin-left: 8px;
+}
+
+.Google-button:hover{
+  background-color: #f7f7f7;
 }
 
 .sub-title{
@@ -106,7 +111,7 @@
 }
 
 .account span::before,.account span::after{
-  border-top: 1px solid;
+  border-top: 1px solid #ececec;
   content: "";
   position: absolute;
   top: 50%;
@@ -154,6 +159,10 @@
   display: flex;
   color: #545658;
   font-size: 16px;
+}
+
+.sex-text{
+  margin-right: 10px;
 }
 
 .radio-box{
@@ -237,6 +246,18 @@
   width: 50%;
 }
 
+/* 矢印消す */
+select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+select::-ms-expand{
+  display: none;
+}
+
+/* 矢印作成 */
 .select-box::after{
   content: '';
   display: inline-block;
@@ -250,6 +271,19 @@
   border-bottom: 2px solid #d9d9d9;
 }
 
+select::-ms-expand {
+	display: none;
+}
+
+.origin-area{
+  width: 100%;
+}
+
+.select-box{
+  position: relative;
+  width: 50%;
+}
+
 /* textarea */
 .textarea{
   width: 100%;
@@ -260,17 +294,27 @@
   width: 100%;
   background-color: #01bfbd;
   color: #fff;
-  margin-top: 20px;
   padding: 15px 0;
+  border-radius: 3px; 
 }
 
 .submit-button:hover{
-  background-color: #01a6a4;
+  border-bottom-color: #01bfbd;
 }
 
+.submit-button:active {
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  color: #01a6a4;
+}
+Ω
 /* last-text */
 .strong{
   color: #01a6a4;
+}
+
+.strong:hover{
+  color: #01bfbd;
 }
 
 .account-bottom{
@@ -284,6 +328,12 @@
 
 .account-have-box{
   display: inline-block;
+}
+
+.login:hover {
+  box-sizing: border-box;
+  border-bottom: 1px solid #ececec;
+  border-bottom-color: #01bfbd;
 }
 
 .login{
@@ -306,33 +356,53 @@
   font-size: 12px;
 }
 
-/* 周りのborder色変更 */
-input[type="text"]:focus{
-  outline: 0;
-  border-color: #01bfbd;
+.email-check:hover{
+  box-sizing: border-box;
+  border-bottom: 1px solid #ececec;
+  border-bottom-color: #01bfbd;
 }
 
-input[type="email"]:focus{
+/* 周りのborder色変更 */
+input:focus{
+  background-color: #fff;
+  border-color: rgba(59, 133, 133, .4);
+  box-shadow: 0 0 0 2px rgba(1, 191, 189, .1);
   outline: 0;
-  border-color: #01bfbd;
+}
+
+textarea:focus{
+  background-color: #fff;
+  border-color: rgba(59, 133, 133, .4);
+  box-shadow: 0 0 0 2px rgba(1, 191, 189, .1);
+  outline: 0;
+}
+
+/* input[type="email"]:focus{
+  border-color: rgba(59, 133, 133, .4);
+  box-shadow: 0 0 0 2px rgba(1, 191, 189, .1);
+  background-color: #fff;
 }
 
 input[type="number"]:focus{
-  outline: 0;
-  border-color: #01bfbd;
+  border-color: rgba(59, 133, 133, .4);
+  box-shadow: 0 0 0 2px rgba(1, 191, 189, .1);
+  background-color: #fff;
 }
 
 input[type="password"]:focus{
-  outline: 0;
-  border-color: #01bfbd;
+  border-color: rgba(59, 133, 133, .4);
+  box-shadow: 0 0 0 2px rgba(1, 191, 189, .1);
+  background-color: #fff;
 }
 
 input[type="textarea"]:focus{
-  outline: 0;
-  border-color: #01bfbd;
+  border-color: rgba(59, 133, 133, .4);
+  box-shadow: 0 0 0 2px rgba(1, 191, 189, .1);
+  background-color: #fff;
 }
 
 select[type="text"]:focus{
-  outline: 0;
-  border-color: #01bfbd;
-}
+  border-color: rgba(59, 133, 133, .4);
+  box-shadow: 0 0 0 2px rgba(1, 191, 189, .1);
+  background-color: #fff;
+} */

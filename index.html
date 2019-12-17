@@ -14,12 +14,8 @@
     <main class="main inner">
         <h1 class="form-title">アカウント作成</h1>
         <div class="sns-buttons">
-          <div class="button-box blue-box">
-            <a href="" class="facebook-button">Facebookでスタート</a>
-          </div>
-          <div class="button-box">
-            <a href="" class="Google-button">Googleでスタート</a>
-          </div>
+          <a href="" class="facebook-button button-box">Facebookでスタート</a>
+          <a href="" class="Google-button">Googleでスタート</a>
         </div>
         <p class="sub-title">タイムラインへ投稿を行うことや、アカウント情報を伝えることはありません。</p>
         <div class="account-box sub-title">
@@ -39,23 +35,23 @@
             <div class="text-label">
               <p class="name">名前<span class="red">※</span></p>
             </div>
-            <input class="text-area" type="text" name="yourname">
+            <input class="text-area" type="text" name="yourname" required>
           </div>
         </div>
         <!-- ラジオbox -->
         <div class="radio width">
           <p class="name">性別</p>
           <div class="sex-box">
-            <label class="sex-text" for="sex-text">
-              <input class="radio-box" type="radio" name="sex" id="sex-text">
+            <label class="sex-text" for="men">
+              <input class="radio-box" type="radio" name="sex" id="men">
               <span>男性</span>
             </label>
-            <label class="sex-text" for="sex-text1">
-              <input class="radio-box" type="radio" name="sex" id="sex-text1">
+            <label class="sex-text" for="woman">
+              <input class="radio-box" type="radio" name="sex" id="woman">
               <span>女性</span>
             </label>
-            <label class="sex-text" for="sex-text2">
-              <input class="radio-box" type="radio" name="sex" id="sex-text2">
+            <label class="sex-text" for="sex">
+              <input class="radio-box" type="radio" name="sex" id="sex">
               <span>その他</span>
             </label>
           </div>
@@ -66,7 +62,7 @@
             <p class="name">出身</p>
           </div>
           <div class="select-box">
-            <select class="text-area origin-area" type="text" name="origin">
+            <select class="text-area origin-area" type="" name="origin">
               <option value="tokyo">東京</option>
               <option value="tiba">千葉</option>
               <option value="saitama">埼玉</option>
@@ -79,28 +75,28 @@
           <div class="text-label">
             <p class="name">Eメール<span class="red">※</span></p>
           </div>
-          <input class="text-area" type="email" name="email" placeholder="ex) hoge@example.com">
+          <input class="text-area" type="email" name="email" placeholder="ex) hoge@example.com" required>
         </div>
         <!-- 電話番号 -->
         <div class="number-box width">
           <div class="text-label">
             <p class="name">電話番号<span class="red">※</span></p>
           </div>
-          <input class="text-area" type="number" name="number" placeholder="ex) 09012345678">
+          <input class="text-area" type="tell" name="number" placeholder="ex) 09012345678">
         </div>
         <!-- パスワード -->
         <div class="password-box width">
           <div class="text-label">
             <p class="name">パスワード<span class="red">※</span></p>
           </div>
-          <input class="text-area" type="password" name="password">
+          <input class="text-area" type="password" name="password" required>
         </div>
         <!-- パスワード確認 -->
         <div class="confirm-password-box width">
           <div class="text-label">
             <p class="name">パスワード (確認用)<span class="red">※</span></p>
           </div>
-          <input class="text-area" type="password" name="password">
+          <input class="text-area" type="password" name="password" re>
         </div>
         <!-- check box 作成 -->
         <div class="check-box width">
@@ -121,8 +117,8 @@
         <div class="big-text-area width">
           <div　class="big-text">
             <p class="name">備考</p>
+            <textarea class="text-area long-text-area" name="comment" id="" cols="30" rows="10" placeholder="何かあればご記入ください" type="textarea"></textarea>
           </div>
-          <input class="text-area long-text-area" name="comment" id="" cols="30" rows="10" placeholder="何かあればご記入ください" type="textarea"></input>
         </div>
         <!-- アカウント作成button -->
         <input class="submit-button" type="submit" value="アカウント作成">
