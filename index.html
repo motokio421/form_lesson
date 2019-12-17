@@ -80,9 +80,9 @@
         <!-- 電話番号 -->
         <div class="number-box width">
           <div class="text-label">
-            <p class="name">電話番号<span class="red">※</span></p>
+            <p class="name">電話番号</p>
           </div>
-          <input class="text-area" type="tell" name="number" placeholder="ex) 09012345678">
+          <input class="text-area" type="tell" name="tel" placeholder="ex) 09012345678">
         </div>
         <!-- パスワード -->
         <div class="password-box width">
@@ -96,21 +96,21 @@
           <div class="text-label">
             <p class="name">パスワード (確認用)<span class="red">※</span></p>
           </div>
-          <input class="text-area" type="password" name="password" re>
+          <input class="text-area" type="password" name="password" required>
         </div>
         <!-- check box 作成 -->
         <div class="check-box width">
           <div class="text-label">
-            <p class="name">希望のコース</p>
+            <p class="name">希望コース</p>
           </div>
           <div class="check">
-            <input type="checkbox" name="type" class="checkbox" id="checkbox"><label class="label-checkbox" for="checkbox">フロントエンド</label>
+            <input type="checkbox" name="type" class="checkbox" id="front"><label class="label-checkbox" for="checkbox">フロントエンド</label>
           </div>
           <div class="check">
-            <input type="checkbox" name="type" class="checkbox" id="checkbox1"><label class="label-checkbox" for="checkbox1">バックエンド</label>
+            <input type="checkbox" name="type" class="checkbox" id="back"><label class="label-checkbox" for="checkbox1">バックエンド</label>
           </div>
           <div class="check">
-            <input type="checkbox" name="type" class="checkbox" id="checkbox2"><label class="label-checkbox" for="checkbox2">アプリ</label>
+            <input type="checkbox" name="type" class="checkbox" id="app"><label class="label-checkbox" for="checkbox2">アプリ</label>
           </div>
         </div>
         <!-- 備考 -->
@@ -124,7 +124,7 @@
         <input class="submit-button" type="submit" value="アカウント作成">
         <!-- last文字 -->
         <p class="name account-bottom">
-          アカウントを作成することすることにより、<a class="strong" href="">利用契約</a>と<a class="strong" href="">プライバシーポリシー</a>に同意するものとします。
+          アカウントを作成することにより、<a class="strong" href="">利用契約</a>と<a class="strong" href="">プライバシーポリシー</a>に同意するものとします。
         </p>
       </form>
     </main>
@@ -132,7 +132,7 @@
     <!-- formの外 -->
    <section class="out-form">
     <div class="login-box">
-      <a class="account-have-box">既にアカウントお持ちですか？</a>
+      <a class="account-have-box">すでににアカウントお持ちですか？</a>
       <a class="login strong" href="">ログイン</a>
     </div>
       <a class="email-check strong" href="">メールが届きませんか？</a>

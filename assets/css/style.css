@@ -70,6 +70,7 @@
   border-radius: 3px;
   width: 50%; 
   background-color:#3b5999 ;
+  transition-duration: 0.6s;
 }
 
 .facebook-button:hover{
@@ -86,6 +87,7 @@
   border-radius: 3px;
   width: 50%; 
   margin-left: 8px;
+  transition-duration: 0.6s;
 }
 
 .Google-button:hover{
@@ -296,10 +298,12 @@ select::-ms-expand {
   color: #fff;
   padding: 15px 0;
   border-radius: 3px; 
+  cursor: pointer;
+  transition-duration: 0.6s;
 }
 
 .submit-button:hover{
-  border-bottom-color: #01bfbd;
+  background-color: #01a6a4;
 }
 
 .submit-button:active {
@@ -311,6 +315,7 @@ select::-ms-expand {
 /* last-text */
 .strong{
   color: #01a6a4;
+  transition-duration: 0.6s;
 }
 
 .strong:hover{
@@ -340,6 +345,7 @@ select::-ms-expand {
 .login{
   display: inline-block;
   color: #01a6a4;
+  transition-duration: 0.6s;
 }
 
 .login-box{
@@ -357,6 +363,7 @@ select::-ms-expand {
   line-height: 16px;
   font-size: 12px;
   color: #01a6a4;
+  transition-duration: 0.6s;
 }
 
 .email-check:hover{
